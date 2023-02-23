@@ -96,24 +96,9 @@ public partial class MainPage : ContentPage
 
     private async Task SetDayRequest_Handler(object sender, EventArgs e, ValueType res)
     {
-        await SendDayBlockToDB(sender, e, res);
-    }
-
-    private async Task SendDayBlockToDB(object sender, EventArgs e, ValueType res)
-    {
-        string gkapimcypabndianfString = "yarr";
-
-        try
-        {
-            HttpClient cli = new HttpClient();
-            cli.Send(new HttpRequestMessage(HttpMethod.Post, $"localhost.com/SendDayBlockToDB?{gkapimcypabndianfString}"));
-            cli.Dispose();
-        }
-        catch (Exception Ex)
-        {
-            await DisplayAlert(Ex.Message, "MainPage", "HAHA LOLU", "Connection error.");
-        }
-    }
+        await Shell.Current.GoToAsync("TimeSetterPage");
+        //await SendDayBlockToDB(sender, e, res);
+    }    
 
 }
 

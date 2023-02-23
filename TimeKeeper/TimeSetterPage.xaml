@@ -9,6 +9,8 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
+        <Label Text="blabla"></Label>
+
         <Button Text="Go back." Clicked="AlertDBOfClick_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
