@@ -28,13 +28,15 @@
                 <Grid RowDefinitions="50, auto, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"
                       ColumnDefinitions="100,*,*,*,*,*,*,*" class="grid-container">
 
-                    <Button Grid.Row="1"  Grid.Column="1" Text="Monday"    BackgroundColor="DarkSlateGray" />
-                    <Button Grid.Row="1"  Grid.Column="2" Text="Tuesday"    BackgroundColor="DarkSlateGray" />
-                    <Button Grid.Row="1"  Grid.Column="3" Text="Wednesday"    BackgroundColor="DarkSlateGray" />
-                    <Button Grid.Row="1"  Grid.Column="4" Text="Thursday"    BackgroundColor="DarkSlateGray" />
-                    <Button Grid.Row="1"  Grid.Column="5" Text="Friday"    BackgroundColor="DarkSlateGray" />
-                    <Button Grid.Row="1"  Grid.Column="6" Text="Saturday"    BackgroundColor="DarkSlateGray" />
-                    <Button Grid.Row="1"  Grid.Column="7" Text="Sunday"    BackgroundColor="DarkSlateGray" />
+                    <Button Grid.Row="0" BackgroundColor="Pink" TextColor="Black" Grid.Column="0" Grid.ColumnSpan="8" Text="STRESS BUTTON CLICK ME!" Clicked="SendRequestToDB_Clicked"/>
+
+                    <Button Grid.Row="1"  Grid.Column="1" Text="Monday"    BackgroundColor="DarkSlateGray" Clicked="BtnMonday_Clicked" />
+                    <Button Grid.Row="1"  Grid.Column="2" Text="Tuesday"    BackgroundColor="DarkSlateGray" Clicked="BtnTuesday_Clicked"/>
+                    <Button Grid.Row="1"  Grid.Column="3" Text="Wednesday"    BackgroundColor="DarkSlateGray" Clicked="BtnWednesday_Clicked"/>
+                    <Button Grid.Row="1"  Grid.Column="4" Text="Thursday"    BackgroundColor="DarkSlateGray" Clicked="BtnThursday_Clicked"/>
+                    <Button Grid.Row="1"  Grid.Column="5" Text="Friday"    BackgroundColor="DarkSlateGray" Clicked="BtnFriday_Clicked"/>
+                    <Button Grid.Row="1"  Grid.Column="6" Text="Saturday"    BackgroundColor="DarkSlateGray" Clicked="BtnSaturday_Clicked"/>
+                    <Button Grid.Row="1"  Grid.Column="7" Text="Sunday"    BackgroundColor="DarkSlateGray" Clicked="BtnSunday_Clicked"/>
 
 
                     <Button Grid.Row="2"  Grid.Column="0" Text="1am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
