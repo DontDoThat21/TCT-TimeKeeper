@@ -98,7 +98,13 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync("TimeSetterPage");
         //await SendDayBlockToDB(sender, e, res);
-    }    
+    }
 
+    private async void BtnTimeSlot_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("TimeSetterSlotPage");
+
+
+    }
 }
 

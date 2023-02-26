@@ -9,6 +9,7 @@ public partial class TimeSetterPage : ContentPage
 
 	private async void AlertDBOfClick_Clicked(object sender, EventArgs e)
     {
-		await Shell.Current.Navigation.
+		MainPage mp = new MainPage();
+		await Shell.Current.Navigation.PushModalAsync(mp);
     }
 }
