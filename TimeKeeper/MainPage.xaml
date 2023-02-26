@@ -24,223 +24,230 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button Grid.Row="0" BackgroundColor="Pink" TextColor="Black" Grid.Column="0" Grid.ColumnSpan="8" Text="STRESS BUTTON CLICK ME!" Clicked="SendRequestToDB_Clicked"/>
+
+
             <ScrollView>
                 <Grid RowDefinitions="50, auto, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"
                       ColumnDefinitions="100,*,*,*,*,*,*,*" class="grid-container">
 
-                    <Button Grid.Row="0" BackgroundColor="Pink" TextColor="Black" Grid.Column="0" Grid.ColumnSpan="8" Text="STRESS BUTTON CLICK ME!" Clicked="SendRequestToDB_Clicked"/>
+                    <Button Grid.Row="0"  Grid.Column="1" Text="Monday"    BackgroundColor="DarkSlateGray" Clicked="BtnMonday_Clicked" />
+                    <Button Grid.Row="0"  Grid.Column="2" Text="Tuesday"    BackgroundColor="DarkSlateGray" Clicked="BtnTuesday_Clicked"/>
+                    <Button Grid.Row="0"  Grid.Column="3" Text="Wednesday"    BackgroundColor="DarkSlateGray" Clicked="BtnWednesday_Clicked"/>
+                    <Button Grid.Row="0"  Grid.Column="4" Text="Thursday"    BackgroundColor="DarkSlateGray" Clicked="BtnThursday_Clicked"/>
+                    <Button Grid.Row="0"  Grid.Column="5" Text="Friday"    BackgroundColor="DarkSlateGray" Clicked="BtnFriday_Clicked"/>
+                    <Button Grid.Row="0"  Grid.Column="6" Text="Saturday"    BackgroundColor="DarkSlateGray" Clicked="BtnSaturday_Clicked"/>
+                    <Button Grid.Row="0"  Grid.Column="7" Text="Sunday"    BackgroundColor="DarkSlateGray" Clicked="BtnSunday_Clicked"/>
+                    
+                    <HorizontalStackLayout HeightRequest="500" Grid.ColumnSpan="7" Grid.RowSpan="25">
 
-                    <Button Grid.Row="1"  Grid.Column="1" Text="Monday"    BackgroundColor="DarkSlateGray" Clicked="BtnMonday_Clicked" />
-                    <Button Grid.Row="1"  Grid.Column="2" Text="Tuesday"    BackgroundColor="DarkSlateGray" Clicked="BtnTuesday_Clicked"/>
-                    <Button Grid.Row="1"  Grid.Column="3" Text="Wednesday"    BackgroundColor="DarkSlateGray" Clicked="BtnWednesday_Clicked"/>
-                    <Button Grid.Row="1"  Grid.Column="4" Text="Thursday"    BackgroundColor="DarkSlateGray" Clicked="BtnThursday_Clicked"/>
-                    <Button Grid.Row="1"  Grid.Column="5" Text="Friday"    BackgroundColor="DarkSlateGray" Clicked="BtnFriday_Clicked"/>
-                    <Button Grid.Row="1"  Grid.Column="6" Text="Saturday"    BackgroundColor="DarkSlateGray" Clicked="BtnSaturday_Clicked"/>
-                    <Button Grid.Row="1"  Grid.Column="7" Text="Sunday"    BackgroundColor="DarkSlateGray" Clicked="BtnSunday_Clicked"/>
-
-
-                    <Button Grid.Row="2"  Grid.Column="0" Text="1am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="3"  Grid.Column="0" Text="2am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="4"  Grid.Column="0" Text="3am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="5"  Grid.Column="0" Text="4am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="6"  Grid.Column="0" Text="5am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="7"  Grid.Column="0" Text="6am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="8"  Grid.Column="0" Text="7am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="9"  Grid.Column="0" Text="8am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="10"  Grid.Column="0" Text="9am"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="11"  Grid.Column="0" Text="10am"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="12"  Grid.Column="0" Text="11am"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="13"  Grid.Column="0" Text="12pm"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="14"  Grid.Column="0" Text="1pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="15"  Grid.Column="0" Text="2pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="16"  Grid.Column="0" Text="3pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="17"  Grid.Column="0" Text="4pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="18"  Grid.Column="0" Text="5pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="19"  Grid.Column="0" Text="6pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="20"  Grid.Column="0" Text="7pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="21"  Grid.Column="0" Text="8pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="22"  Grid.Column="0" Text="9pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="23"  Grid.Column="0" Text="10pm"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="24"  Grid.Column="0" Text="11pm"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-                    <Button Grid.Row="25"  Grid.Column="0" Text="12am"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
-
-
+                        <StackLayout>
+                            <Button Grid.Row="2"  Grid.Column="0" Text="1am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="3"  Grid.Column="0" Text="2am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="4"  Grid.Column="0" Text="3am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="5"  Grid.Column="0" Text="4am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="6"  Grid.Column="0" Text="5am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="7"  Grid.Column="0" Text="6am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="8"  Grid.Column="0" Text="7am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="9"  Grid.Column="0" Text="8am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="10"  Grid.Column="0" Text="9am"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="11"  Grid.Column="0" Text="10am"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="12"  Grid.Column="0" Text="11am"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="13"  Grid.Column="0" Text="12pm"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="14"  Grid.Column="0" Text="1pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="15"  Grid.Column="0" Text="2pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="16"  Grid.Column="0" Text="3pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="17"  Grid.Column="0" Text="4pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="18"  Grid.Column="0" Text="5pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="19"  Grid.Column="0" Text="6pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="20"  Grid.Column="0" Text="7pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="21"  Grid.Column="0" Text="8pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="22"  Grid.Column="0" Text="9pm"   BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="23"  Grid.Column="0" Text="10pm"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="24"  Grid.Column="0" Text="11pm"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
+                            <Button Grid.Row="25"  Grid.Column="0" Text="12am"  BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
 
 
-                    <Button Grid.Row="2"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="3"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="4"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="5"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="6"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="7"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="8"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="9"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="10" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="11" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="12" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="13" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="14" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="15" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="16" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="17" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="18" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="19" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="20" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="21" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="22" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="23" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="24" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
-                    <Button Grid.Row="25" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
 
-                    <Button Grid.Row="2"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="3"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="4"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="5"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="6"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="7"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="8"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="9"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="10" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="11" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="12" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="13" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="14" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="15" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="16" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="17" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="18" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="19" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="20" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="21" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="22" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="23" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="24" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
-                    <Button Grid.Row="25" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
 
-                    <Button Grid.Row="2"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7" Clicked="BtnTimeSlot_Clicked" />
-                    <Button Grid.Row="3"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="4"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="5"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="6"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="7"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="8"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="9"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="10" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="11" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="12" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="13" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="14" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="15" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="16" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="17" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="18" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="19" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="20" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="21" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="22" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="23" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="24" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
-                    <Button Grid.Row="25" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="2"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="3"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="4"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="5"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="6"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="7"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="8"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="9"  Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="10" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="11" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="12" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="13" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="14" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="15" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="16" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="17" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="18" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="19" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="20" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="21" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="22" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="23" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="24" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
+                            <Button Grid.Row="25" Grid.Column="1" Text="..."  BackgroundColor="Yellow" Opacity=".7"/>
 
-                    <Button Grid.Row="2"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="3"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="4"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="5"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="6"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="7"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="8"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="9"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="10" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="11" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="12" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="13" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="14" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="15" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="16" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="17" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="18" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="19" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="20" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="21" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="22" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="23" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="24" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
-                    <Button Grid.Row="25" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="2"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="3"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="4"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="5"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="6"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="7"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="8"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="9"  Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="10" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="11" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="12" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="13" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="14" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="15" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="16" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="17" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="18" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="19" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="20" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="21" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="22" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="23" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="24" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
+                            <Button Grid.Row="25" Grid.Column="2" Text="..."  BackgroundColor="MediumPurple" Opacity=".7"/>
 
-                    <Button Grid.Row="2"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="3"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="4"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="5"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="6"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="7"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="8"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="9"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="10" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="11" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="12" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="13" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="14" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="15" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="16" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="17" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="18" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="19" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="20" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="21" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="22" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="23" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="24" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
-                    <Button Grid.Row="25" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="2"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7" Clicked="BtnTimeSlot_Clicked" />
+                            <Button Grid.Row="3"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="4"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="5"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="6"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="7"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="8"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="9"  Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="10" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="11" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="12" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="13" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="14" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="15" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="16" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="17" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="18" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="19" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="20" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="21" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="22" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="23" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="24" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
+                            <Button Grid.Row="25" Grid.Column="3" Text="..."  BackgroundColor="IndianRed" Opacity=".7"/>
 
-                    <Button Grid.Row="2"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="3"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="4"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="5"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="6"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="7"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="8"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="9"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="10" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="11" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="12" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="13" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="14" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="15" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="16" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="17" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="18" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="19" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="20" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="21" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="22" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="23" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="24" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
-                    <Button Grid.Row="25" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="2"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="3"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="4"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="5"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="6"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="7"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="8"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="9"  Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="10" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="11" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="12" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="13" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="14" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="15" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="16" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="17" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="18" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="19" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="20" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="21" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="22" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="23" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="24" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
+                            <Button Grid.Row="25" Grid.Column="4" Text="..."  BackgroundColor="LightBlue" />
 
-                    <Button Grid.Row="2"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="3"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="4"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="5"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="6"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="7"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="8"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="9"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="10" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="11" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="12" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="13" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="14" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="15" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="16" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="17" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="18" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="19" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="20" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="21" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="22" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="23" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="24" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
-                    <Button Grid.Row="25" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="2"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="3"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="4"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="5"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="6"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="7"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="8"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="9"  Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="10" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="11" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="12" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="13" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="14" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="15" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="16" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="17" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="18" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="19" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="20" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="21" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="22" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="23" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="24" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+                            <Button Grid.Row="25" Grid.Column="5" Text="..."  BackgroundColor="LightGreen" />
+
+                            <Button Grid.Row="2"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="3"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="4"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="5"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="6"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="7"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="8"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="9"  Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="10" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="11" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="12" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="13" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="14" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="15" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="16" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="17" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="18" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="19" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="20" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="21" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="22" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="23" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="24" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+                            <Button Grid.Row="25" Grid.Column="6" Text="..."  BackgroundColor="Pink" />
+
+                            <Button Grid.Row="2"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="3"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="4"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="5"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="6"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="7"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="8"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="9"  Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="10" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="11" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="12" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="13" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="14" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="15" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="16" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="17" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="18" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="19" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="20" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="21" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="22" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="23" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="24" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                            <Button Grid.Row="25" Grid.Column="7" Text="..."  BackgroundColor="Orange" />
+                        </StackLayout>
+                        
+                        
+                    </HorizontalStackLayout>                    
 
                 </Grid>
             </ScrollView>
