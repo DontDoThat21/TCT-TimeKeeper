@@ -10,7 +10,7 @@
         </Style>
     </ContentPage.Resources>
 
-    <ScrollView Grid.Column="0" WidthRequest="400">
+    <ScrollView WidthRequest="400">
         
         <!-- Control container -->
         <VerticalStackLayout
@@ -18,37 +18,45 @@
             Padding="2,2"
             VerticalOptions="Center">
 
-            <!-- Click me! -->
-            <Button
+            <VerticalStackLayout>
+                <!-- Click me! -->
+                <Button
                     x:Name="CounterBtn"
                     Text="Click me"
                     SemanticProperties.Hint="Counts the number of times you click"
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Center"/>
 
-            <!-- Debug developer button -->
-            <Button Grid.Row="0" BackgroundColor="Orange" TextColor="Black" Grid.Column="0" Grid.ColumnSpan="8" Text="STRESS BUTTON CLICK ME!" Clicked="SendRequestToDB_Clicked"/>
+                <!-- Debug developer button -->
+                <Button Grid.Row="0" BackgroundColor="Orange" TextColor="Black" Grid.Column="0" Grid.ColumnSpan="8" Text="STRESS BUTTON CLICK ME!" Clicked="SendRequestToDB_Clicked"/>
 
-            <!-- DOW grid -->
-            <Grid RowDefinitions="50, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"
-                      ColumnDefinitions="*,*,*,*,*,*,*,*" WidthRequest="1000" class="grid-container">
+            </VerticalStackLayout>
 
-                <ScrollView HeightRequest="50" WidthRequest="1000" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="1">
-                    <!-- Day headers -->
-                    <HorizontalStackLayout HeightRequest="50" Grid.RowSpan="1">
+            <ScrollView HeightRequest="50" WidthRequest="200" Orientation="Vertical">
+                    <ScrollView Orientation="Horizontal">
+                        <Frame BorderColor="Blue">
+                            <!-- DOW grid -->
+                            <Grid RowDefinitions="50, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"
+                            ColumnDefinitions="*,*,*,*,*,*,*,*" WidthRequest="600" class="grid-container">
 
-                        <Button Grid.Column="0" Text="Monday"    BackgroundColor="DarkSlateGray" Clicked="BtnMonday_Clicked"/>
-                        <Button Grid.Column="1" Text="Tuesday"    BackgroundColor="DarkSlateGray" Clicked="BtnTuesday_Clicked"/>
-                        <Button Grid.Column="2" Text="Wednesday"    BackgroundColor="DarkSlateGray" Clicked="BtnWednesday_Clicked"/>
-                        <Button Grid.Column="3" Text="Thursday"    BackgroundColor="DarkSlateGray" Clicked="BtnThursday_Clicked"/>
-                        <Button Grid.Column="4" Text="Friday"    BackgroundColor="DarkSlateGray" Clicked="BtnFriday_Clicked"/>
-                        <Button Grid.Column="5" Text="Saturday"    BackgroundColor="DarkSlateGray" Clicked="BtnSaturday_Clicked"/>
-                        <Button Grid.Column="6" Text="Sundaya"    BackgroundColor="DarkSlateGray" Clicked="BtnSunday_Clicked"/>
+                            <!-- Day headers -->
+                            <HorizontalStackLayout HeightRequest="50" Grid.RowSpan="1">
 
-                    </HorizontalStackLayout>
-                </ScrollView>
-                
-            </Grid>
+                                <Button Grid.Column="0" Text="Monday"    BackgroundColor="DarkSlateGray" Clicked="BtnMonday_Clicked"/>
+                                <Button Grid.Column="1" Text="Tuesday"    BackgroundColor="DarkSlateGray" Clicked="BtnTuesday_Clicked"/>
+                                <Button Grid.Column="2" Text="Wednesday"    BackgroundColor="DarkSlateGray" Clicked="BtnWednesday_Clicked"/>
+                                <Button Grid.Column="3" Text="Thursday"    BackgroundColor="DarkSlateGray" Clicked="BtnThursday_Clicked"/>
+                                <Button Grid.Column="4" Text="Friday"    BackgroundColor="DarkSlateGray" Clicked="BtnFriday_Clicked"/>
+                                <Button Grid.Column="5" Text="Saturday"    BackgroundColor="DarkSlateGray" Clicked="BtnSaturday_Clicked"/>
+                                <Button Grid.Column="6" Text="Sundaya"    BackgroundColor="DarkSlateGray" Clicked="BtnSunday_Clicked"/>
+
+                            </HorizontalStackLayout>
+
+                            </Grid>
+                        </Frame>                    
+                    </ScrollView>
+
+            </ScrollView>
             
             <!-- Hour block controls -->
             <HorizontalStackLayout>
