@@ -9,7 +9,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Label Text="blabla"></Label>
+        <Label Text="Lorem Ipsum"></Label>
 
         <Button Text="Go back." Clicked="AlertDBOfClick_Clicked"/>
     </VerticalStackLayout>

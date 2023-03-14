@@ -4,8 +4,12 @@
              x:Class="TimeKeeper.MainPage">
 
     <ContentPage.Resources>
-        <x:String x:Key="DayColorUnselected">DarkSlateGray</x:String>
-        <x:String x:Key="DayColorSelected">Red</x:String>
+        <!--DarkSlateGray-->
+        <x:String x:Key="DayColorUnselected" x:Uid="2F4F4F">DarkSlateGray</x:String>
+
+        <!--Red-->
+        <x:String x:Key="DayColorSelected" x:Uid="E06666">Red</x:String>
+        
         <Style TargetType="Button">
             <Setter Property="Margin"
                     Value="0"/>

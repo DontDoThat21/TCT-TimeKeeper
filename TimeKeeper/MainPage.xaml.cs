@@ -1,4 +1,6 @@
-﻿namespace TimeKeeper;
+﻿using Microsoft.Maui.Controls.Xaml;
+
+namespace TimeKeeper;
 
 public partial class MainPage : ContentPage
 {
@@ -15,6 +17,14 @@ public partial class MainPage : ContentPage
         Saturday,
         Sunday
     }
+    // I would like to use the XAML directives, however it's being a PITA so for now I submit to an enum
+    List<Color> colors = new List<Color>
+    {
+        Colors.Red, // red
+        Colors.Green, // green
+        Colors.Blue, // blue
+        Colors.DarkSlateGray // darkslategray
+    };
 
 	public MainPage()
 	{
@@ -109,22 +119,26 @@ public partial class MainPage : ContentPage
 
     private void DayOfWeek_HorizontalStackLoad(object sender, EventArgs e)
     {
-        switch (DateTime.Now.DayOfWeek.ToString())
+        DayOfWeek day = DateTime.Now.DayOfWeek;
+        Color selected = colors.Find(i => i.Equals(Colors.Red)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
+
+        //Color selected = Color.FromArgb(this.Resources["DayColorSelected"].ToString());
+        switch (day)
         {
-            case "Monday":
-
-            case "Tuesday":
-
-            case "Wednesday":
-
-            case "Thursday":
-
-            case "Friday":
-
-            case "Saturday":
-
-            case "Sunday":
-
+            case DayOfWeek.Monday:
+                btnMon.BackgroundColor = selected; break;
+            case DayOfWeek.Tuesday:
+                btnTue.BackgroundColor = selected; break;
+            case DayOfWeek.Wednesday:
+                btnWed.BackgroundColor = selected; break;
+            case DayOfWeek.Thursday:
+                btnThu.BackgroundColor = selected; break;
+            case DayOfWeek.Friday:
+                btnFri.BackgroundColor = selected; break;
+            case DayOfWeek.Saturday:
+                btnSat.BackgroundColor = selected; break;
+            case DayOfWeek.Sunday:
+                btnSun.BackgroundColor = selected; break;
             default:
                 break;
         }
