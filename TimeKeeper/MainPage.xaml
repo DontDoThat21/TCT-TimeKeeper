@@ -39,11 +39,11 @@
             </VerticalStackLayout>
 
             <ScrollView HeightRequest="100" WidthRequest="500" Orientation="Vertical" Padding="10,0" Margin="2,2">
-                    <ScrollView Orientation="Horizontal">
+                    <ScrollView x:Name="SV_DaysOfWeek" Orientation="Horizontal" Scrolled="SV_DaysOfWeek_Scrolled">
                         <Frame BorderColor="Purple" HeightRequest="200">
                             <!-- DOW grid -->
                             <Grid RowDefinitions="50, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"
-                            ColumnDefinitions="*,*,*,*,*,*,*,*" WidthRequest="675" Padding="25,0" class="grid-container">
+                            ColumnDefinitions="*,*,*,*,*,*,*,*" WidthRequest="675" Padding="25,0">
 
                             <!-- Day headers -->
                             <HorizontalStackLayout HeightRequest="50" Grid.RowSpan="1" Spacing="10" Loaded="DayOfWeek_HorizontalStackLoad">

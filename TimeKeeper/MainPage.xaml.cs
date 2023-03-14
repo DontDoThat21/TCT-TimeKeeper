@@ -117,31 +117,48 @@ public partial class MainPage : ContentPage
 
     }
 
-    private void DayOfWeek_HorizontalStackLoad(object sender, EventArgs e)
+    private async void DayOfWeek_HorizontalStackLoad(object sender, EventArgs e)
     {
         DayOfWeek day = DateTime.Now.DayOfWeek;
         Color selected = colors.Find(i => i.Equals(Colors.Red)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
 
-        //Color selected = Color.FromArgb(this.Resources["DayColorSelected"].ToString());
+        // this should acco
+        double btnWidth = 100;//btnMon.Width;
+
         switch (day)
         {
             case DayOfWeek.Monday:
+                btnWidth *= 0;
                 btnMon.BackgroundColor = selected; break;
             case DayOfWeek.Tuesday:
+                btnWidth *= 0;
                 btnTue.BackgroundColor = selected; break;
             case DayOfWeek.Wednesday:
+                btnWidth *= 1;
                 btnWed.BackgroundColor = selected; break;
             case DayOfWeek.Thursday:
+                btnWidth *= 2;
                 btnThu.BackgroundColor = selected; break;
             case DayOfWeek.Friday:
+                btnWidth *= 3;
                 btnFri.BackgroundColor = selected; break;
             case DayOfWeek.Saturday:
+                btnWidth *= 3;
                 btnSat.BackgroundColor = selected; break;
             case DayOfWeek.Sunday:
+                btnWidth *= 3;
                 btnSun.BackgroundColor = selected; break;
             default:
                 break;
         }
+        await SV_DaysOfWeek.ScrollToAsync(btnWidth, 0, true);
+
     }
+
+    private void SV_DaysOfWeek_Scrolled(object sender, ScrolledEventArgs e)
+    {
+
+    }
+
 }
 
