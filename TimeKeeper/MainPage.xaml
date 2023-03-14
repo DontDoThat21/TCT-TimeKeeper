@@ -4,6 +4,8 @@
              x:Class="TimeKeeper.MainPage">
 
     <ContentPage.Resources>
+        <x:String x:Key="DayColorUnselected">DarkSlateGray</x:String>
+        <x:String x:Key="DayColorSelected">Red</x:String>
         <Style TargetType="Button">
             <Setter Property="Margin"
                     Value="0"/>
@@ -34,21 +36,21 @@
 
             <ScrollView HeightRequest="100" WidthRequest="500" Orientation="Vertical" Padding="10,0" Margin="2,2">
                     <ScrollView Orientation="Horizontal">
-                        <Frame BorderColor="Purple" HeightRequest="100">
+                        <Frame BorderColor="Purple" HeightRequest="200">
                             <!-- DOW grid -->
                             <Grid RowDefinitions="50, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"
                             ColumnDefinitions="*,*,*,*,*,*,*,*" WidthRequest="675" Padding="25,0" class="grid-container">
 
                             <!-- Day headers -->
-                            <HorizontalStackLayout HeightRequest="50" Grid.RowSpan="1" Spacing="10">
-
-                                <Button Grid.Column="0" Text="Monday"    BackgroundColor="DarkSlateGray" Clicked="BtnMonday_Clicked"/>
-                                <Button Grid.Column="1" Text="Tuesday"    BackgroundColor="DarkSlateGray" Clicked="BtnTuesday_Clicked"/>
-                                <Button Grid.Column="2" Text="Wednesday"    BackgroundColor="DarkSlateGray" Clicked="BtnWednesday_Clicked"/>
-                                <Button Grid.Column="3" Text="Thursday"    BackgroundColor="DarkSlateGray" Clicked="BtnThursday_Clicked"/>
-                                <Button Grid.Column="4" Text="Friday"    BackgroundColor="DarkSlateGray" Clicked="BtnFriday_Clicked"/>
-                                <Button Grid.Column="5" Text="Saturday"    BackgroundColor="DarkSlateGray" Clicked="BtnSaturday_Clicked"/>
-                                <Button Grid.Column="6" Text="Sunday"    BackgroundColor="DarkSlateGray" Clicked="BtnSunday_Clicked"/>
+                            <HorizontalStackLayout HeightRequest="50" Grid.RowSpan="1" Spacing="10" Loaded="DayOfWeek_HorizontalStackLoad">
+                                                               
+                                <Button Grid.Column="0" Text="Monday" x:Name="btnMon"     BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnMonday_Clicked"/>
+                                <Button Grid.Column="1" Text="Tuesday" x:Name="btnTue"    BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnTuesday_Clicked"/>
+                                <Button Grid.Column="2" Text="Wednesday" x:Name="btnWed"  BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnWednesday_Clicked"/>
+                                <Button Grid.Column="3" Text="Thursday"  x:Name="btnThu"  BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnThursday_Clicked"/>
+                                <Button Grid.Column="4" Text="Friday" x:Name="btnFri"     BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnFriday_Clicked"/>
+                                <Button Grid.Column="5" Text="Saturday" x:Name="btnSat"   BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnSaturday_Clicked"/>
+                                <Button Grid.Column="6" Text="Sunday" x:Name="btnSun"     BackgroundColor="{StaticResource DayColorUnselected}" Clicked="BtnSunday_Clicked"/>
 
                             </HorizontalStackLayout>
 

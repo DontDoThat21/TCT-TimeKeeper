@@ -106,5 +106,28 @@ public partial class MainPage : ContentPage
 
 
     }
+
+    private void DayOfWeek_HorizontalStackLoad(object sender, EventArgs e)
+    {
+        switch (DateTime.Now.DayOfWeek.ToString())
+        {
+            case "Monday":
+
+            case "Tuesday":
+
+            case "Wednesday":
+
+            case "Thursday":
+
+            case "Friday":
+
+            case "Saturday":
+
+            case "Sunday":
+
+            default:
+                break;
+        }
+    }
 }
 
