@@ -6,6 +6,7 @@ public partial class MainPage : ContentPage
 {
 	int count = 1;
 	public Task<Views.TimeSetterPage> PopModalAsync { get; set; }
+    public Button btnDaySelected;
 
     enum Days
     {
@@ -106,6 +107,10 @@ public partial class MainPage : ContentPage
 
     private async Task SetDayRequest_Handler(object sender, EventArgs e, ValueType res)
     {
+        btnDaySelected.BackgroundColor = colors.Find(i => i.Equals(Colors.DarkSlateGray)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
+        Button clicked = (Button)sender;
+        clicked.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
+
         await Shell.Current.GoToAsync("TimeSetterPage");
         //await SendDayBlockToDB(sender, e, res);
     }
@@ -129,28 +134,29 @@ public partial class MainPage : ContentPage
         {
             case DayOfWeek.Monday:
                 btnWidth *= 0;
-                btnMon.BackgroundColor = selected; break;
+                btnMon.BackgroundColor = selected; btnDaySelected = btnMon; break;
             case DayOfWeek.Tuesday:
                 btnWidth *= 0;
-                btnTue.BackgroundColor = selected; break;
+                btnTue.BackgroundColor = selected; btnDaySelected = btnTue; break;
             case DayOfWeek.Wednesday:
                 btnWidth *= 1;
-                btnWed.BackgroundColor = selected; break;
+                btnWed.BackgroundColor = selected; btnDaySelected = btnWed; break;
             case DayOfWeek.Thursday:
                 btnWidth *= 2;
-                btnThu.BackgroundColor = selected; break;
+                btnThu.BackgroundColor = selected; btnDaySelected = btnThu; break;
             case DayOfWeek.Friday:
                 btnWidth *= 3;
-                btnFri.BackgroundColor = selected; break;
+                btnFri.BackgroundColor = selected; btnDaySelected = btnFri; break;
             case DayOfWeek.Saturday:
                 btnWidth *= 3;
-                btnSat.BackgroundColor = selected; break;
+                btnSat.BackgroundColor = selected; btnDaySelected = btnSat; break;
             case DayOfWeek.Sunday:
                 btnWidth *= 3;
-                btnSun.BackgroundColor = selected; break;
+                btnSun.BackgroundColor = selected; btnDaySelected = btnSun; break;
             default:
                 break;
         }
+        
         await SV_DaysOfWeek.ScrollToAsync(btnWidth, 0, true);
 
     }
