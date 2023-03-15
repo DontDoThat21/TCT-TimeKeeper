@@ -119,9 +119,7 @@ public partial class MainPage : ContentPage
 
     private async void BtnTimeSlot_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("TimeSetterSlotPage");
-
-
+        await Shell.Current.GoToAsync("TimeSetterSlotPage");        
     }
 
     private async void DayOfWeek_HorizontalStackLoad(object sender, EventArgs e)
