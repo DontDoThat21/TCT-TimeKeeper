@@ -1,11 +1,13 @@
-﻿using Microsoft.Maui.Controls.Xaml;
+﻿using CommunityToolkit.Maui.Views;
+using Microsoft.Maui.Controls.Xaml;
+using TimeKeeper.Views;
 
 namespace TimeKeeper;
 
 public partial class MainPage : ContentPage
 {
 	int count = 1;
-	public Task<Views.TimeSetterPage> PopModalAsync { get; set; }
+	public Task<TimeSetterPage> PopModalAsync { get; set; }
     public Button btnDaySelected;
 
     enum Days
@@ -111,7 +113,8 @@ public partial class MainPage : ContentPage
         Button clicked = (Button)sender;
         clicked.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
 
-        await Shell.Current.GoToAsync("TimeSetterPage");
+        //await Shell.Current.GoToAsync("TimeSetterPage");
+        this.ShowPopup(new TimeSetterPage());
         //await SendDayBlockToDB(sender, e, res);
     }
 

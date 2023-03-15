@@ -1,6 +1,8 @@
+using CommunityToolkit.Maui.Views;
+
 namespace TimeKeeper.Views;
 
-public partial class TimeSetterPage : ContentPage
+public partial class TimeSetterPage : Popup
 {
 	public TimeSetterPage()
 	{
