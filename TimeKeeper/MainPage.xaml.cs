@@ -34,18 +34,6 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		//count++;
-
-		//if (count == 1)
-		//	CounterBtn.Text = $"Clicked {count} time";
-		//else
-		//	CounterBtn.Text = $"Clicked {count} times";
-
-		//SemanticScreenReader.Announce(CounterBtn.Text);
-	}
-
     private async void BtnTime_Clicked(object sender, EventArgs e)
     {
 		await Shell.Current.GoToAsync("TimeSetterPage");
@@ -112,9 +100,7 @@ public partial class MainPage : ContentPage
         Button clicked = (Button)sender;
         clicked.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
 
-        //await Shell.Current.GoToAsync("TimeSetterPage");
         this.ShowPopup(new TimeSetterPage());
-        //await SendDayBlockToDB(sender, e, res);
     }
 
     private async void BtnTimeSlot_Clicked(object sender, EventArgs e)
