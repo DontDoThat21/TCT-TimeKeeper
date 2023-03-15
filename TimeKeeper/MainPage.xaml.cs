@@ -97,8 +97,8 @@ public partial class MainPage : ContentPage
     private async Task SetDayRequest_Handler(object sender, EventArgs e, ValueType res)
     {
         btnDaySelected.BackgroundColor = colors.Find(i => i.Equals(Colors.DarkSlateGray)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
-        Button clicked = (Button)sender;
-        clicked.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
+        btnDaySelected = (Button)sender;
+        btnDaySelected.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
 
         this.ShowPopup(new TimeSetterPage());
     }

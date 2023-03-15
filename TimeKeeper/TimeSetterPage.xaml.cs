@@ -13,5 +13,6 @@ public partial class TimeSetterPage : Popup
     {
 		MainPage mp = new MainPage();
 		await Shell.Current.Navigation.PushModalAsync(mp);
+        this.Close();
     }
 }

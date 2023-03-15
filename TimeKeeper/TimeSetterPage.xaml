@@ -5,12 +5,8 @@
              x:Class="TimeKeeper.Views.TimeSetterPage"
              CanBeDismissedByTappingOutsideOfPopup="True">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
 
-        <Label Text="Lorem Ipsum"></Label>
+        <Label Text="Lorem Ipsum"/>
 
         <Button Text="Go back." Clicked="AlertDBOfClick_Clicked"/>
     </VerticalStackLayout>
