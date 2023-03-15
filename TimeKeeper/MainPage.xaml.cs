@@ -48,8 +48,7 @@ public partial class MainPage : ContentPage
 
     private async void BtnTime_Clicked(object sender, EventArgs e)
     {
-		await Shell.Current.GoToAsync("TimeSetterPage");	// thanks nick gurfr
-		//await DisplayAlert("Sup", "Fire", "Click me");
+		await Shell.Current.GoToAsync("TimeSetterPage");
     }
 
     private async void SendRequestToDB_Clicked(object sender, EventArgs e)
