@@ -4,16 +4,29 @@
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
              x:Class="TimeKeeper.Views.TimeSetterPage"
              CanBeDismissedByTappingOutsideOfPopup="True">
-    <VerticalStackLayout>
+    <ScrollView>
 
-        <Label Text="Lorem Ipsum"/>
+        <Grid RowDefinitions="50,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+                      ColumnDefinitions="*,*,*,*,*,*,*">
+            <Label Text="Laorem Ipsum"/>
 
-        <ScrollView>
-            <Grid>
+            <ScrollView>
+                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
+
+                    <Frame BorderColor="Orange">
+
+                        <VerticalStackLayout>
+                            <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Testing"/>
+                            <Label Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="2">Booyakah!</Label>
+                        </VerticalStackLayout>                        
+                        
+                    </Frame>
+                    
+                </Grid>                
                 
-            </Grid>
-        </ScrollView>
-
-        <Button Text="Go back." Clicked="AlertDBOfClick_Clicked"/>
-    </VerticalStackLayout>
+            </ScrollView>
+        </Grid>        
+        
+    </ScrollView>
+    
 </mct:Popup>
