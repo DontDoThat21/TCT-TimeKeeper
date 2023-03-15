@@ -16,10 +16,10 @@ public partial class TimeSetterPageDetail : ContentPage
         //this.ShowPopup(new TimeSetterPageDetail());
     }
 
-    private void BtnNewTimer_Clicked(object sender, EventArgs e)
+    private async void BtnNewTimer_Clicked(object sender, EventArgs e)
     {
-       // await Shell.Current.GoToAsync("TimeTimerPage");
-
+        await Shell.Current.GoToAsync("TimeTimerPage");
+        // await Shell.Current.GoToAsync("TimeTimerPage");
     }
 
     private void BtnNewAutomation_Clicked(object sender, EventArgs e)
@@ -27,8 +27,8 @@ public partial class TimeSetterPageDetail : ContentPage
 
     }
 
-    private void BtnNewNotification_Clicked(object sender, EventArgs e)
+    private async void BtnNewNotification_Clicked(object sender, EventArgs e)
     {
-
+        await Shell.Current.GoToAsync("TimeNotificationPage");
     }
 }
