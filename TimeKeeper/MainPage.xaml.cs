@@ -6,7 +6,6 @@ namespace TimeKeeper;
 
 public partial class MainPage : ContentPage
 {
-	int count = 1;
 	public Task<TimeSetterPage> PopModalAsync { get; set; }
     public Button btnDaySelected;
 
@@ -113,7 +112,6 @@ public partial class MainPage : ContentPage
         DayOfWeek day = DateTime.Now.DayOfWeek;
         Color selected = colors.Find(i => i.Equals(Colors.Red)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
 
-        // this should acco
         double btnWidth = 100; //btnMon.Width;
 
         switch (day)
