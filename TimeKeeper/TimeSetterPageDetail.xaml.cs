@@ -12,14 +12,11 @@ public partial class TimeSetterPageDetail : ContentPage
     private async void BtnNewEvent_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("TimeEventSetterPage");
-        //this.ShowPopup
-        //this.ShowPopup(new TimeSetterPageDetail());
     }
 
     private async void BtnNewTimer_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("TimeTimerPage");
-        // await Shell.Current.GoToAsync("TimeTimerPage");
     }
 
     private void BtnNewAutomation_Clicked(object sender, EventArgs e)
