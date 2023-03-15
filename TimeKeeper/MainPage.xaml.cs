@@ -34,14 +34,14 @@ public partial class MainPage : ContentPage
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
+		//count++;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+		//if (count == 1)
+		//	CounterBtn.Text = $"Clicked {count} time";
+		//else
+		//	CounterBtn.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		//SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 
     private async void BtnTime_Clicked(object sender, EventArgs e)
@@ -128,7 +128,7 @@ public partial class MainPage : ContentPage
         Color selected = colors.Find(i => i.Equals(Colors.Red)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
 
         // this should acco
-        double btnWidth = 100;//btnMon.Width;
+        double btnWidth = 100; //btnMon.Width;
 
         switch (day)
         {
