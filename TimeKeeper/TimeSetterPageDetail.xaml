@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
-             x:Class="TimeKeeper.TimeSetterPageDetail"
-             CanBeDismissedByTappingOutsideOfPopup="True">
-    <VerticalStackLayout>
-        <Button Text="Create New Event" Clicked="BtnNewEvent_Clicked"/>
-        <Button Text="Create New Timer" Clicked="BtnNewTimer_Clicked"/>
-        <Button Text="Create New Automation" Clicked="BtnNewAutomation_Clicked"/>
-        <Button Text="Create New Notification" Clicked="BtnNewNotification_Clicked"/>
+             x:Class="TimeKeeper.Views.TimeSetterPageDetail">
+    <Grid>
+        <VerticalStackLayout HeightRequest="1000">
+            <Button Text="Create New Event" Clicked="BtnNewEvent_Clicked"/>
+            <Button Text="Create New Timer" Clicked="BtnNewTimer_Clicked"/>
+            <Button Text="Create New Automation" Clicked="BtnNewAutomation_Clicked"/>
+            <Button Text="Create New Notification" Clicked="BtnNewNotification_Clicked"/>
 
-    </VerticalStackLayout>
-</mct:Popup>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

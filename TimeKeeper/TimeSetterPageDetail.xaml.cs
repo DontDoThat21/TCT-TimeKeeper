@@ -1,21 +1,24 @@
 using CommunityToolkit.Maui.Views;
 
-namespace TimeKeeper;
+namespace TimeKeeper.Views;
 
-public partial class TimeSetterPageDetail : Popup
+public partial class TimeSetterPageDetail : ContentPage
 {
 	public TimeSetterPageDetail()
 	{
 		InitializeComponent();
 	}
 
-    private void BtnNewEvent_Clicked(object sender, EventArgs e)
+    private async void BtnNewEvent_Clicked(object sender, EventArgs e)
     {
-        this.ShowPopup(new TimeSetterPageDetail());
+        await Shell.Current.GoToAsync("TimeEventSetterPage");
+        //this.ShowPopup
+        //this.ShowPopup(new TimeSetterPageDetail());
     }
 
     private void BtnNewTimer_Clicked(object sender, EventArgs e)
     {
+       // await Shell.Current.GoToAsync("TimeTimerPage");
 
     }
 

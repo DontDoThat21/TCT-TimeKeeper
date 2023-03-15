@@ -152,6 +152,6 @@ public partial class MainPage : ContentPage
 
     private void BtnHours_Clicked(object sender, EventArgs e)
     {
-        this.ShowPopup(new TimeSetterPageDetail());
+        //this.ShowPopup(new TimeSetterPageDetail());
     }
 }

@@ -5,24 +5,17 @@
              x:Class="TimeKeeper.Views.TimeSetterPage"
              CanBeDismissedByTappingOutsideOfPopup="True">
     <ScrollView>
-
         <Grid RowDefinitions="50,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"
                       ColumnDefinitions="*,*,*">
-
             <ScrollView>
                 <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
-
                     <Frame BorderColor="Orange" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
-
-                        <VerticalStackLayout>
-                            <Button Text="Testing"/>
+                        <VerticalStackLayout Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
+                            <Button Text="Testing" HeightRequest="50"/>
                             <Label>Booyakah!</Label>
                         </VerticalStackLayout>
-                        
-                    </Frame>
-                    
-                </Grid>                
-                
+                    </Frame>                    
+                </Grid>
             </ScrollView>
         </Grid>        
         
