@@ -112,7 +112,7 @@ public partial class MainPage : ContentPage
         DayOfWeek day = DateTime.Now.DayOfWeek;
         Color selected = colors.Find(i => i.Equals(Colors.Red)); // should be pulling from xaml dynamically with themes. all in time. // MainPage.Colors.DarkSlateGray;
 
-        double btnWidth = 100; //btnMon.Width;
+        double btnWidth = 100; //btnMon.Width; 
 
         switch (day)
         {
@@ -150,5 +150,8 @@ public partial class MainPage : ContentPage
 
     }
 
+    private void BtnHours_Clicked(object sender, EventArgs e)
+    {
+        this.ShowPopup(new TimeSetterPageDetail());
+    }
 }
-

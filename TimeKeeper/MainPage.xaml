@@ -80,14 +80,14 @@
                         <!-- Hours -->
                         <VerticalStackLayout WidthRequest="1000" Grid.ColumnSpan="8" Spacing="20" VerticalOptions="Fill">
 
-                            <Button Text="..."  BackgroundColor="Green" />
-                            <Button Text="..."  BackgroundColor="Purple" />
-                            <Button Text="..."  BackgroundColor="Blue" />
-                            <Button Text="..."  BackgroundColor="Orange" />
-                            <Button Text="..."  BackgroundColor="AliceBlue" />
-                            <Button Text="..."  BackgroundColor="Teal" />
-                            <Button Text="..."  BackgroundColor="Yellow" />
-                            <Button Text="..."  BackgroundColor="DarkBlue" />
+                            <Button Text="..."  BackgroundColor="Green" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="Purple" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="Blue" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="Orange" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="AliceBlue" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="Teal" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="Yellow" Clicked="BtnHours_Clicked"/>
+                            <Button Text="..."  BackgroundColor="DarkBlue" Clicked="BtnHours_Clicked"/>
 
 
 

@@ -7,18 +7,17 @@
     <ScrollView>
 
         <Grid RowDefinitions="50,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"
-                      ColumnDefinitions="*,*,*,*,*,*,*">
-            <Label Text="Laorem Ipsum"/>
+                      ColumnDefinitions="*,*,*">
 
             <ScrollView>
                 <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
 
-                    <Frame BorderColor="Orange">
+                    <Frame BorderColor="Orange" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
 
                         <VerticalStackLayout>
-                            <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Testing"/>
-                            <Label Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="2">Booyakah!</Label>
-                        </VerticalStackLayout>                        
+                            <Button Text="Testing"/>
+                            <Label>Booyakah!</Label>
+                        </VerticalStackLayout>
                         
                     </Frame>
                     
