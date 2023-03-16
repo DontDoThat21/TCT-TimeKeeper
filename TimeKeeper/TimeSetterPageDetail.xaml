@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TimeKeeper.TimeSetterPageDetail">
     <VerticalStackLayout>
+
         <Button Text="Create New Event" Clicked="BtnNewEvent_Clicked"/>
         <Button Text="Create New Timer" Clicked="BtnNewTimer_Clicked"/>
         <Button Text="Create New Automation" Clicked="BtnNewAutomation_Clicked"/>
