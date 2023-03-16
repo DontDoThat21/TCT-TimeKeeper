@@ -9,6 +9,7 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(AddTimePage), typeof(AddTimePage));
         Routing.RegisterRoute(nameof(EditTimePage), typeof(EditTimePage));
         Routing.RegisterRoute(nameof(TimeSetterPage), typeof(TimeSetterPage));
+        Routing.RegisterRoute(nameof(TimeSetterPageDetail), typeof(TimeSetterPageDetail));
 		
         InitializeComponent();
 	}
