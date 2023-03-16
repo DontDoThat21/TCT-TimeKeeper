@@ -99,7 +99,7 @@ public partial class MainPage : ContentPage
         btnDaySelected = (Button)sender;
         btnDaySelected.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
 
-        await Shell.Current.GoToAsync("TimeSetterPage"); // test
+        await Shell.Current.GoToAsync("TimeSetterPage");
     }
 
     private async void BtnTimeSlot_Clicked(object sender, EventArgs e)
