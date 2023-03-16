@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
-             x:Class="TimeKeeper.Views.TimeSetterPage"
-             CanBeDismissedByTappingOutsideOfPopup="True">
-    <ScrollView>
-        <Grid RowDefinitions="50,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"
-                      ColumnDefinitions="*,*,*">
-            <ScrollView>
-                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
-                    <Frame BorderColor="Orange" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
-                        <VerticalStackLayout Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
-                            <Button Text="Testing" HeightRequest="50"/>
-                            <Label>Booyakah!</Label>
-                        </VerticalStackLayout>
-                    </Frame>                    
+             x:Class="TimeKeeper.Views.TimeSetterPage">
+    <ScrollView WidthRequest="600">
+
+        <ScrollView>
+
+            <Frame BorderColor="Yellow">
+
+                <Grid RowDefinitions="50,*,*,*,*" ColumnDefinitions="*,*,*,*,*" Padding="10,10" ColumnSpacing="10" RowSpacing="10" >
+                    <Label x:Name="Lbl_DayOfWeekGreeter" Text="Set events for {day}" Loaded="Lbl_DayOfWeekGreeterLoad" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5" FontSize="Large"/>
+                    <Button Text="W" Clicked="Btn_WClicked" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Button Text="Every Day" Clicked="Btn_EveryDayEntryClicked" Grid.Row="1" Grid.Column="2"/>
+                    <Button Text="test1" Grid.Row="2" Grid.Column="0"/>
+                    <Button Text="test2" Grid.Row="2" Grid.Column="1"/>
+                    <Button Text="test3" Grid.Row="2" Grid.Column="2"/>
+                    <Button Text="test4" Grid.Row="2" Grid.Column="3"/>
+                    <Button Text="test5" Grid.Row="2" Grid.Column="4"/>
+                    <Button Text="test1" Grid.Row="3" Grid.Column="0"/>
+                    <Button Text="test2" Grid.Row="3" Grid.Column="1"/>
+                    <Button Text="test3" Grid.Row="3" Grid.Column="2"/>
+                    <Button Text="test4" Grid.Row="3" Grid.Column="3"/>
+                    <Button Text="test5" Grid.Row="3" Grid.Column="4"/>
+                    <Button Text="test1" Grid.Row="4" Grid.Column="0"/>
+                    <Button Text="test2" Grid.Row="4" Grid.Column="1"/>
+                    <Button Text="test3" Grid.Row="4" Grid.Column="2"/>
+                    <Button Text="test4" Grid.Row="4" Grid.Column="3"/>
+                    <Button Text="test5" Grid.Row="4" Grid.Column="4"/>
+                    
                 </Grid>
-            </ScrollView>
-        </Grid>        
-        
+
+
+            </Frame>
+
+        </ScrollView>
+
     </ScrollView>
     
-</mct:Popup>
+</ContentPage>

@@ -99,7 +99,7 @@ public partial class MainPage : ContentPage
         btnDaySelected = (Button)sender;
         btnDaySelected.BackgroundColor = colors.Find(i => i.Equals(Colors.Red)); // read above comment
 
-        this.ShowPopup(new TimeSetterPage());
+        await Shell.Current.GoToAsync("TimeSetterPage");
     }
 
     private async void BtnTimeSlot_Clicked(object sender, EventArgs e)
@@ -150,8 +150,10 @@ public partial class MainPage : ContentPage
 
     }
 
-    private void BtnHours_Clicked(object sender, EventArgs e)
+    private async void BtnHours_Clicked(object sender, EventArgs e)
     {
         //this.ShowPopup(new TimeSetterPageDetail());
+        await Shell.Current.GoToAsync("TimeSetterPageDetail");
+
     }
 }

@@ -17,7 +17,7 @@
     </ContentPage.Resources>
 
     <ScrollView>
-        <Grid >
+        <Grid>
             <!-- Control container -->
             <VerticalStackLayout
             Spacing="15"
@@ -89,8 +89,6 @@
                             <Button Text="..."  BackgroundColor="Yellow" Clicked="BtnHours_Clicked"/>
                             <Button Text="..."  BackgroundColor="DarkBlue" Clicked="BtnHours_Clicked"/>
 
-
-
                         </VerticalStackLayout>
 
                     </Grid>
@@ -107,7 +105,7 @@
                             <!-- Hours -->
                             <HorizontalStackLayout HeightRequest="700" Grid.Row="0" Grid.Column="1" Grid.RowSpan="25">
 
-                                <StackLayout Grid.Row="1" Grid.Column="2">
+                                <StackLayout Grid.Row="1"  Grid.Column="2">
                                     <Button Grid.Row="3"   Grid.Column="0" Text="1am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
                                     <Button Grid.Row="4"   Grid.Column="0" Text="2am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
                                     <Button Grid.Row="5"   Grid.Column="0" Text="3am"    BackgroundColor="Yellow" Clicked="BtnTime_Clicked" />
